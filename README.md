@@ -31,6 +31,51 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
+### Project Structure
+
+      Dashboard/
+      ├── dashboard/                # Main dashboard application
+      │   ├── node_modules/         # Node dependencies
+      │   ├── public/
+      │   │   ├── index.html        # Main HTML file
+      │   │   └── manifest.json     # Web app manifest file
+      │   ├── src/
+      │   │   ├── assets/
+      │   │   │   └── styles/       # CSS files for styling
+      │   │   │       ├── TaskBoard.css
+      │   │   │       ├── TaskCard.css
+      │   │   │       └── TaskSection.css
+      │   │   ├── components/
+      │   │   │   ├── AddTaskModal.jsx       # Component for adding tasks
+      │   │   │   ├── Dashboard.jsx          # Main Dashboard component
+      │   │   │   ├── ErrorBoundary.jsx      # Error boundary for error handling
+      │   │   │   ├── Navbar.jsx             # Navbar component
+      │   │   │   ├── ProjectContent.jsx     # Content component for projects
+      │   │   │   └── Sidebar.jsx            # Sidebar component
+      │   │   ├── contexts/
+      │   │   │   └── FirebaseContext.js     # Firebase context for managing Firebase interactions
+      │   │   ├── images/                    # Folder for image assets
+      │   │   │   ├── link.png
+      │   │   │   └── pen.png
+      │   │   ├── pages/
+      │   │   │   ├── AdminDashboardPage.jsx # Admin dashboard page
+      │   │   │   ├── DashboardPage.jsx      # Main dashboard page
+      │   │   │   ├── HomePage.jsx           # Home page
+      │   │   │   └── LoginPage.jsx          # Login page
+      │   │   ├── App.css                    # Global styles
+      │   │   ├── App.js                     # Main App component
+      │   │   ├── firebase.js                # Firebase configuration file
+      │   │   ├── index.css                  # CSS for index file
+      │   │   ├── index.js                   # Main entry point
+      │   │   ├── reportWebVitals.js         # Web Vitals report file
+      │   │   ├── setupTests.js              # Test setup file
+      │   │   ├── store.js                   # Redux store configuration
+      │   │   └── taskSlice.js               # Redux slice for task management
+      │   ├── .gitignore                     # Files and directories to ignore in Git
+      │   ├── package.json                   # Project dependencies and scripts
+      │   ├── package-lock.json              # Locked versions of dependencies
+      │   └── README.md                      # Project README
+
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
